@@ -2,6 +2,6 @@
 
 Developed with `Next.js` + `Tailwind CSS` + `AOS`
 
-Welcome to my world 🌎 🚀
+Welcome to my 2021 portfolio 🌎 🚀
 
 🚀 [palminister-portfolio](https://palminister-portfolio.vercel.app/)
