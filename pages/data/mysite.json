@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "name": "Palminister Blog",
+      "desc": "A personal blog dedicated to multidisciplinary practice",
+      "url": "https://palminister-blog.vercel.app/",
+      "img": "/mysite-thumbnail/palminister-blog-thumb.png"
+    },
+    {
+      "id": 1,
+      "name": "Civil Map 2020",
+      "desc": "A map visualization of the civil movement in 2020 (TH)",
+      "url": "https://palminister-civil-map.vercel.app/",
+      "img": "/mysite-thumbnail/civil-map-thumb.png"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "name": "LINE HACKATHON 2020: 1st Place Award of Student Category",
+      "company": "LINE Company (Thailand)",
+      "date": "November 2020",
+      "img": "/myexperience/line-hack.jpg",
+      "desc": [
+        "Developed a friendly chat bot \"NAMA\" specialized in organizing group gatherings, enriching the value of time and friendship using LINE and Google technologies.",
+        "Designed the content, features, motion graphics, UI, developed the front-end pages, and executed the pitching presentation."
+      ],
+      "url": [
+        "https://iamprompt.medium.com/linehack2020-experience-21ea8def888e",
+        "https://techsauce.co/pr-news/line-thailand-winner-line-hack-2020"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Teaching Assistant (Object Oriented Programming)",
+      "company": "ICT, Mahidol University",
+      "date": "January 2021 - May 2021",
+      "img": "",
+      "desc": [
+        "Collaborated with instructor to grade coursework and assist students on their programming challenges"
+      ],
+      "url": []
+    },
+    {
+      "id": 2,
+      "name": "Google Developer Student Core Team",
+      "company": "Google Developer Group",
+      "date": "August 2020 - Present",
+      "img": "/myexperience/thumbd_dsc.jpg",
+      "desc": [
+        "Facilitates and manages the Google developer community’s activities.",
+        "Participate in the Google Developer Student Clubs Solution Challenge (Ongoing project \"ThumbD\")"
+      ],
+      "url": ["https://youtu.be/ANfTSWeE6Ns"]
+    },
+    {
+      "id": 3,
+      "name": "Mahidol University International Relations Ambassador 2019",
+      "company": "Mahidol University",
+      "date": "January 2020 - January 2021",
+      "img": "/myexperience/muir.jpg",
+      "desc": [
+        "Selected as one of 20 students to represent Mahidol university for various international guests and international conferences.",
+        "Selected as one of the Top 5 Star Ambassadors"
+      ],
+      "url": ["https://www.ict.mahidol.ac.th/en/?p=14803"]
+    },
+    {
+      "id": 4,
+      "name": "Virus: First Runner Up Short Film",
+      "company": "MThai + NBTC",
+      "date": "August 2020",
+      "img": "/myexperience/virus_thumbnail.jpg",
+      "desc": [
+        "Created a short film raising the cyberbullying issue in Thailand."
+      ],
+      "url": [
+        "https://seeme.me/ch/upclip/MmmZXy",
+        "https://www.nstda.or.th/sci2pub/palminister-cyberbullying/"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "The Parliament Hackathon Participant",
+      "company": "Parliament of Thailand",
+      "date": "November 2019",
+      "img": "/myexperience/parliament-hack.jpg",
+      "desc": [
+        "Redesigned the User Experience and User Interface of the parliament’s complaint platform. (Prototype)"
+      ],
+      "url": []
+    }
+  ]
+}
