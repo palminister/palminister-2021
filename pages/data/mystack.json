@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "name": "React",
+      "img": "/techstacks/React.png"
+    },
+    {
+      "id": 1,
+      "name": "Next",
+      "img": "/techstacks/Next.js.png"
+    },
+    {
+      "id": 2,
+      "name": "Tailwind",
+      "img": "/techstacks/Tailwind.png"
+    },
+    {
+      "id": 3,
+      "name": "Node",
+      "img": "/techstacks/Node.png"
+    },
+    {
+      "id": 4,
+      "name": "Java",
+      "img": "/techstacks/Java.png"
+    },
+    {
+      "id": 5,
+      "name": "Python",
+      "img": "/techstacks/Python.png"
+    },
+    {
+      "id": 6,
+      "name": "Pandas",
+      "img": "/techstacks/Pandas.png"
+    },
+    {
+      "id": 7,
+      "name": "Figma",
+      "img": "/techstacks/Figma.png"
+    },
+    {
+      "id": 8,
+      "name": "Notion",
+      "img": "/techstacks/Notion.png"
+    }
+  ]
+}

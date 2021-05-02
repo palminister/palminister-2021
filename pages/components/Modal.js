@@ -46,16 +46,14 @@ const Modal = ({ selectExperience, setSelectExperience }) => {
                   // }
                   className="grid w-full grid-cols-1"
                 >
-                  <div className="">
-                    <div className="bg-green-400 ">
-                      {currentExperience.img.length != 0 ? (
-                        <img
-                          src={currentExperience.img}
-                          alt={currentExperience.name}
-                          className="object-cover"
-                        />
-                      ) : null}
-                    </div>
+                  <div>
+                    {currentExperience.img.length != 0 ? (
+                      <img
+                        src={currentExperience.img}
+                        alt={currentExperience.name}
+                        className="object-cover"
+                      />
+                    ) : null}
                   </div>
                   <div className="p-10">
                     <h1 className="text-xl font-bold">

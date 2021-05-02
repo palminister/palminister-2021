@@ -3,6 +3,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 const Stack = () => {
+  const myStackData = require('../data/mystack.json')
   useEffect(() => {
     Aos.init({ duration: 400 })
   }, [])
@@ -20,95 +21,17 @@ const Stack = () => {
       </div>
       <div className="flex justify-center pb-10">
         <div className="flex flex-wrap justify-center max-w-2xl gap-7">
-          <img
-            src="/techstacks/React.png"
-            alt="React"
-            className={techStyle}
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-offset="150"
-            data-aos-once="true"
-          />
-          <img
-            src="/techstacks/Next.js.png"
-            alt="Next"
-            className={techStyle}
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-offset="150"
-            data-aos-delay="200"
-            data-aos-once="true"
-          />
-          <img
-            src="/techstacks/Tailwind.png"
-            alt="Tailwind"
-            className={techStyle}
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-offset="150"
-            data-aos-delay="400"
-            data-aos-once="true"
-          />
-          <img
-            src="/techstacks/Node.png"
-            alt="Node"
-            className={techStyle}
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-offset="150"
-            data-aos-delay="500"
-            data-aos-once="true"
-          />
-          <div className="hidden sm:flex " style={{ flexBasis: 50 }}></div>
-          <img
-            src="/techstacks/Java.png"
-            alt="Java"
-            className={techStyle}
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-offset="150"
-            data-aos-once="true"
-          />
-          <img
-            src="/techstacks/Python.png"
-            alt="Python"
-            className={techStyle}
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-offset="150"
-            data-aos-delay="200"
-            data-aos-once="true"
-          />
-          <img
-            src="/techstacks/Pandas.png"
-            alt="Pandas"
-            className={techStyle}
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-offset="150"
-            data-aos-delay="400"
-            data-aos-once="true"
-          />
-          <div className="hidden sm:flex " style={{ flexBasis: 50 }}></div>
-          <img
-            src="/techstacks/Figma.png"
-            alt="Figma"
-            className={techStyle}
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-offset="150"
-            data-aos-once="true"
-          />
-          <img
-            src="/techstacks/Notion.png"
-            alt="Notion"
-            className={techStyle}
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-offset="150"
-            data-aos-delay="200"
-            data-aos-once="true"
-          />
+          {myStackData.data.map((stack) => (
+            <img
+              src={stack.img}
+              alt={stack.name}
+              className={techStyle}
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-delay={stack.id * 200}
+              data-aos-once="true"
+            />
+          ))}
         </div>
       </div>
     </div>
