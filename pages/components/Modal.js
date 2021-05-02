@@ -23,7 +23,7 @@ const Modal = ({ selectExperience, setSelectExperience }) => {
             <div className="z-20 flex h-screen p-5 m-auto font-noto md:p-20">
               {/* md:p-20 lg:p-32 */}
               <div className="relative max-w-4xl overflow-y-auto align-middle bg-white shadow-2xl bg-clip-padding rounded-xl">
-                <div className="sticky top-0 z-40">
+                <div className="sticky top-0 z-50">
                   <button
                     onClick={(e) => {
                       e.preventDefault()
@@ -48,7 +48,7 @@ const Modal = ({ selectExperience, setSelectExperience }) => {
                   // }
                   className="grid w-full grid-cols-1"
                 >
-                  <div>
+                  <div className="z-10">
                     {currentExperience.img.length != 0 ? (
                       <Image
                         src={currentExperience.img}
