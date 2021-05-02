@@ -41,7 +41,13 @@ const Intro = ({ offsetY }) => {
         className="absolute right-0 top-20"
         style={{ transform: `translateY(${offsetY * -0.5}px)` }}
       >
-        <Image src="/me-fall-c.png" width="856" height="692" alt="me"></Image>
+        <Image
+          src="/me-fall-c.png"
+          width="856"
+          height="692"
+          alt="me"
+          priority="true"
+        ></Image>
       </div>
     </div>
   )

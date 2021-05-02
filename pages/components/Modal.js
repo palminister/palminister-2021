@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Image from 'next/image'
+
 const Modal = ({ selectExperience, setSelectExperience }) => {
   const myExperienceData = require('../data/myexperience.json')
   const currentExperience = myExperienceData.data.filter((item) =>
@@ -21,7 +23,7 @@ const Modal = ({ selectExperience, setSelectExperience }) => {
             <div className="z-20 flex h-screen p-5 m-auto font-noto md:p-20">
               {/* md:p-20 lg:p-32 */}
               <div className="relative max-w-4xl overflow-y-auto align-middle bg-white shadow-2xl bg-clip-padding rounded-xl">
-                <div className="sticky top-0">
+                <div className="sticky top-0 z-40">
                   <button
                     onClick={(e) => {
                       e.preventDefault()
@@ -48,11 +50,12 @@ const Modal = ({ selectExperience, setSelectExperience }) => {
                 >
                   <div>
                     {currentExperience.img.length != 0 ? (
-                      <img
+                      <Image
                         src={currentExperience.img}
+                        width="1500"
+                        height="788"
                         alt={currentExperience.name}
-                        className="object-cover"
-                      />
+                      ></Image>
                     ) : null}
                   </div>
                   <div className="p-10">
@@ -63,8 +66,8 @@ const Modal = ({ selectExperience, setSelectExperience }) => {
                       {currentExperience.company} [{currentExperience.date}]
                     </p>
                     <ul className="py-5 my-1 text-gray-500 text-md">
-                      {currentExperience.desc.map((d) => (
-                        <li className="pb-2">
+                      {currentExperience.desc.map((d, idx) => (
+                        <li key={idx} className="pb-2">
                           {' '}
                           <span className="pr-2 text-green-400">{'>'}</span>
                           {d}
@@ -76,8 +79,8 @@ const Modal = ({ selectExperience, setSelectExperience }) => {
                         <p className="font-semibold ">Related Articles:</p>
                         <ul className="text-blue-500 ">
                           {' '}
-                          {currentExperience.url.map((url) => (
-                            <li>
+                          {currentExperience.url.map((url, idx) => (
+                            <li key={idx}>
                               <a
                                 href={url}
                                 target="_blank"
