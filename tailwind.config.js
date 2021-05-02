@@ -9,6 +9,9 @@ module.exports = {
       scale: {
         102: '1.015',
       },
+      height: {
+        99: '90%',
+      },
     },
   },
   variants: {

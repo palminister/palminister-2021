@@ -18,33 +18,36 @@ const Modal = ({ selectExperience, setSelectExperience }) => {
           data-aos-duration="400"
         >
           <div className="flex w-screen h-screen">
-            <div className="z-20 flex h-screen p-5 m-auto lg:h-auto font-noto md:p-20">
+            <div className="z-20 flex h-screen p-5 m-auto font-noto md:p-20">
               {/* md:p-20 lg:p-32 */}
               <div className="relative max-w-4xl overflow-y-auto align-middle bg-white shadow-2xl bg-clip-padding rounded-xl">
-                <button
-                  onClick={(e) => {
-                    e.preventDefault()
-                    setSelectExperience(-1)
-                  }}
-                  className="absolute right-0 z-50 inline-flex items-center float-right p-2 m-5 border rounded-full hover:bg-pink-100 border-pink-50 hover:border-pink-300 hover:text-pink-900 focus:outline-none hover:cursor-pointer"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-4 h-4 fill-current"
-                    viewBox="0 0 24 24"
+                <div className="sticky top-0">
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault()
+                      setSelectExperience(-1)
+                    }}
+                    className="absolute right-0 z-50 inline-flex items-center float-right p-2 m-5 bg-white border rounded-full hover:bg-pink-100 border-pink-50 hover:border-pink-300 hover:text-pink-900 focus:outline-none hover:cursor-pointer"
                   >
-                    <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
-                  </svg>
-                </button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-4 h-4 fill-current"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                    </svg>
+                  </button>
+                </div>
                 <div
-                  className={
-                    currentExperience.img.length != 0
-                      ? 'grid w-full grid-cols-1 lg:grid-cols-2'
-                      : 'grid w-full grid-cols-1'
-                  }
+                  // className={
+                  //   currentExperience.img.length != 0
+                  //     ? 'grid w-full grid-cols-1 lg:grid-cols-2'
+                  //     : 'grid w-full grid-cols-1'
+                  // }
+                  className="grid w-full grid-cols-1"
                 >
-                  <div className="flex h-full overflow-hidden">
-                    <div className="flex bg-green-400">
+                  <div className="">
+                    <div className="bg-green-400 ">
                       {currentExperience.img.length != 0 ? (
                         <img
                           src={currentExperience.img}
