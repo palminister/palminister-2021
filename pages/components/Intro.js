@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import 'aos/dist/aos.css'
-
+import * as gtag from '../../lib/gtag'
 const Intro = ({ offsetY }) => {
   return (
     <div className="flex">
@@ -30,6 +30,14 @@ const Intro = ({ offsetY }) => {
               target="_blank"
               rel="noreferrer"
               className="z-20 flex items-center justify-center w-32 px-8 py-3 text-base font-medium text-blue-700 transition ease-in bg-blue-100 border border-transparent rounded-lg cursor-pointer hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
+              onClick={() =>
+                gtag.event({
+                  action: 'resume_click',
+                  category: 'resume',
+                  label: 'Resume Clicked',
+                  value: 'Clicked',
+                })
+              }
             >
               Resume
             </a>

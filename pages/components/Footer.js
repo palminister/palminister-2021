@@ -1,3 +1,4 @@
+import * as gtag from '../../lib/gtag'
 const Footer = () => (
   <div className="p-5 font-sourcecode">
     <div className="flex justify-center space-x-6">
@@ -7,6 +8,14 @@ const Footer = () => (
         target="_blank"
         rel="noreferrer"
         title="GitHub"
+        onClick={() =>
+          gtag.event({
+            action: 'github_click',
+            category: 'github',
+            label: 'Github Clicked',
+            value: 'Clicked',
+          })
+        }
       >
         <svg
           className="w-8 h-8"
