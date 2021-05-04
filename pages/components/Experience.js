@@ -22,7 +22,7 @@ const Experience = ({ setSelectExperience }) => {
         {myExperienceData.data.map((experience) => (
           <button
             key={experience.id}
-            className="p-6 text-left transition ease-in bg-white rounded-lg shadow-lg hover:shadow-xl focus:outline-black "
+            className="p-6 text-left transition duration-300 bg-white rounded-lg shadow-lg hover:shadow-xl focus:outline-black "
             data-aos="fade-up"
             data-aos-delay={experience.id * 200}
             data-aos-once="true"

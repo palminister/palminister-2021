@@ -5,9 +5,9 @@ import Experience from './components/Experience'
 import Project from './components/Project'
 import Modal from './components/Modal'
 import Footer from './components/Footer'
-
 import React, { useState, useEffect } from 'react'
-export default function Home() {
+
+const Home = () => {
   const [offsetY, setOffestY] = useState(0)
   const [selectExperience, setSelectExperience] = useState(-1)
   const handleScroll = () => setOffestY(window.pageYOffset)
@@ -41,3 +41,4 @@ export default function Home() {
     </>
   )
 }
+export default Home
