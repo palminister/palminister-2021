@@ -9,6 +9,13 @@
     },
     {
       "id": 1,
+      "name": "Thai Vaccination",
+      "desc": "Thailand's Vaccination Dashboard",
+      "url": "https://thai-vaccination.vercel.app/",
+      "img": "/mysite-thumbnail/thai-vaccination.png"
+    },
+    {
+      "id": 2,
       "name": "Palminister Blog",
       "desc": "A personal blog dedicated to multidisciplinary practice",
       "url": "https://palminister-blog.vercel.app/",

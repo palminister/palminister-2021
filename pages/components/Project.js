@@ -16,9 +16,11 @@ const Project = () => {
       </div>
       <ul className="grid justify-center max-w-lg px-2 mx-auto my-0 lg:grid-cols-2 lg:max-w-none lg:px-4">
         {mySiteData.data.map((item) => (
-          <div className="m-6 overflow-hidden transition duration-300 transform bg-white rounded-lg shadow-lg cursor-pointer hover:scale-102 hover:shadow-xl">
+          <div
+            key={item.id}
+            className="m-6 overflow-hidden transition duration-300 transform bg-white rounded-lg shadow-lg cursor-pointer hover:scale-102 hover:shadow-xl"
+          >
             <li
-              key={item.id}
               className="flex flex-col overflow-hidden"
               data-aos="fade"
               data-aos-duration="1000"
